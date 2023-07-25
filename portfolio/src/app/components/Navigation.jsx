@@ -1,6 +1,6 @@
 export default function Navigation() {
   return (
-    <nav className="container mb-6 m-auto">
+    <nav className="container mb-6 m-auto p-5">
       <div className="grid grid-cols-2 m-6">
         <div>
           <p>Mi logo</p>
