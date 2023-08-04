@@ -39,7 +39,7 @@ const tools = [
 
 export default function Skills() {
   return (
-    <article className="container m-auto px-8">
+    <article id="techSkills" className="container m-auto px-8">
       <div>
         <h2 className="text-4xl font-bold">Tech Skills</h2>
         <br />
