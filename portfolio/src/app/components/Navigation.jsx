@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <nav className="container mb-6 m-auto p-5 fixed">
+    <nav className="container top-0 left-0 right-0 opacity-90 bg-slate-600 fixed">
       <div className="grid grid-cols-2 m-6">
         <div>
           <p>Mi logo</p>
