@@ -39,8 +39,8 @@ const tools = [
 
 export default function Skills() {
   return (
-    <article id="techSkills" className="container m-auto px-8">
-      <div>
+    <article id="techSkills" className="container m-auto px-8 scroll-mt-20">
+      <div className="m-28">
         <h2 className="text-4xl font-bold">Tech Skills</h2>
         <br />
         <h3 className="text-2xl font-bold pb-6">Lenguages</h3>

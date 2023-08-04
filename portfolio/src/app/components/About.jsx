@@ -1,14 +1,54 @@
+"use client";
+
 import Image from "next/image";
 import profile from "../../Images/Profile.jpg";
+import { useEffect, useState } from "react";
 
 export default function About() {
+  const words = ["Full Stack", "Front End", "Back End"];
+  const phrases = ["Full Stack", "Front End", "Back End"];
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [currentPhrase, setCurrentPhrase] = useState("");
+  const [showNextPhrase, setShowNextPhrase] = useState(false);
+  const typingSpeed = 100; // Velocidad de escritura en milisegundos
+  const delayBetweenPhrases = 1500; // Retraso entre frases en milisegundos
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentPhrase.length < phrases[currentPhraseIndex].length) {
+        setCurrentPhrase(
+          (prevPhrase) =>
+            prevPhrase +
+            phrases[currentPhraseIndex].charAt(currentPhrase.length)
+        );
+      } else {
+        // Finalizó de escribir la frase actual, esperamos el retraso antes de mostrar la siguiente frase
+        setShowNextPhrase(true);
+      }
+    }, typingSpeed);
+
+    return () => {
+      clearInterval(interval); // Limpiamos el intervalo cuando el componente se desmonta
+    };
+  }, [currentPhrase, currentPhraseIndex]);
+
+  useEffect(() => {
+    if (showNextPhrase) {
+      setTimeout(() => {
+        setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+        setCurrentPhrase("");
+        setShowNextPhrase(false);
+      }, delayBetweenPhrases);
+    }
+  }, [showNextPhrase]);
+
   return (
-    <article id="about" className="container m-auto my-12">
-      <div className="grid grid-cols-2 grid-rows-4 ">
+    <article id="about" className="container m-auto scroll-mt-20">
+      <div className="grid grid-cols-2 grid-rows-4 m-28">
         <div className="col-span-1 row-span-4 px-8 flex flex-col justify-center">
           <h1 className="text-6xl mb-5 font-bold">Julian Ezequiel Riera</h1>
           <h2 className="text-3xl mb-4">
-            Full Stack - Front End - Back End Developer
+            <span className="font-bold">{currentPhrase}</span> Developer
           </h2>
           <h3 className="text-2xl mb-4">¡Hola Mundo!</h3>
           <p className="text-xl mb-4">
@@ -20,11 +60,13 @@ export default function About() {
             adaptacion.
           </p>
         </div>
-        <Image
-        alt="Julian Riera Profile"
-          className="rounded-full col-span-1 row-span-4 shadow-sm w-3/4 m-auto"
-          src={profile}
-        />
+        <div className="col-span-1 row-span-4 px-8 flex flex-col justify-center">
+          <Image
+            alt="Julian Riera Profile"
+            className="rounded-full m-auto"
+            src={profile}
+          />
+        </div>
       </div>
     </article>
   );

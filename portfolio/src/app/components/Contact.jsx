@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <article id="contact" className="container m-auto px-8 my-20">
+    <article id="contact" className="container m-auto px-8 my-20 scroll-mt-20">
       <h2 className="text-5xl font-bold my-5 text-center">¡Contactame!</h2>
       <div className="mx-80 my-10">
         <h2 className="text-2xl font-bold my-5">Completa el formulario</h2>
