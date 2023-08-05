@@ -5,7 +5,6 @@ import profile from "../../Images/Profile.jpg";
 import { useEffect, useState } from "react";
 
 export default function About() {
-  const words = ["Full Stack", "Front End", "Back End"];
   const phrases = ["Full Stack", "Front End", "Back End"];
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentPhrase, setCurrentPhrase] = useState("");
