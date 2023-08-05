@@ -10,8 +10,8 @@ export default function About() {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentPhrase, setCurrentPhrase] = useState("");
   const [showNextPhrase, setShowNextPhrase] = useState(false);
-  const typingSpeed = 100; // Velocidad de escritura en milisegundos
-  const delayBetweenPhrases = 1500; // Retraso entre frases en milisegundos
+  const typingSpeed = 100; 
+  const delayBetweenPhrases = 1500; 
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,13 +22,12 @@ export default function About() {
             phrases[currentPhraseIndex].charAt(currentPhrase.length)
         );
       } else {
-        // Finalizó de escribir la frase actual, esperamos el retraso antes de mostrar la siguiente frase
         setShowNextPhrase(true);
       }
     }, typingSpeed);
 
     return () => {
-      clearInterval(interval); // Limpiamos el intervalo cuando el componente se desmonta
+      clearInterval(interval); 
     };
   }, [currentPhrase, currentPhraseIndex]);
 
