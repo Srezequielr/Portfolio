@@ -41,8 +41,8 @@ export default function About() {
   }, [showNextPhrase]);
 
   return (
-    <article id="about" className="container m-auto scroll-mt-20">
-      <div className="grid grid-cols-2 grid-rows-4 m-28">
+    <article id="about" className="container scroll-mt-20 my-20">
+      <div className="grid grid-cols-2 grid-rows-4">
         <div className="col-span-1 row-span-4 px-8 flex flex-col justify-center">
           <h1 className="text-6xl mb-5 font-bold">Julian Ezequiel Riera</h1>
           <h2 className="text-3xl mb-4">

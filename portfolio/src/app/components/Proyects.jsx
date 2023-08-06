@@ -27,7 +27,7 @@ const proyects = [
 export default function Proyects() {
   return (
     <article id="proyects" className="container m-auto px-8 my-5 scroll-mt-20">
-      <div className="m-28">
+      <div>
         <h2 className="text-4xl font-bold my-5">Projects</h2>
         <div className="grid grid-cols-3 gap-12">
           {proyects.map((proyect, index) => (

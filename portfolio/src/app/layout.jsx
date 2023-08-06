@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
   return (
     <html className="!scroll-smooth" lang="en">
       <body className={inter.className}>
-        <Navigation />
         {children}
       </body>
     </html>
