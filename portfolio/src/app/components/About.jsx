@@ -42,13 +42,12 @@ export default function About() {
 
   return (
     <article id="about" className="container scroll-mt-20 my-20">
-      <div className="grid grid-cols-2 grid-rows-4">
+      <div className="grid grid-rows-2 md:grid-cols-2">
         <div className="col-span-1 row-span-4 px-8 flex flex-col justify-center">
-          <h1 className="text-6xl mb-5 font-bold">Julian Ezequiel Riera</h1>
-          <h2 className="text-3xl mb-4">
+          <h1 className="text-4xl md:text-6xl mb-5 font-bold">Julian Ezequiel Riera</h1>
+          <h2 className="text-2xl md:text-3xl mb-4">
             <span className="font-bold">{currentPhrase}</span> Developer
           </h2>
-          <h3 className="text-2xl mb-4">¡Hola Mundo!</h3>
           <p className="text-xl mb-4">
             Si tengo que definir mi perfil profesional, seria perfeccionista.{" "}
             <br />
