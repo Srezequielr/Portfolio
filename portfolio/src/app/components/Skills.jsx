@@ -44,21 +44,21 @@ export default function Skills() {
         <h2 className="text-4xl font-bold">Tech Skills</h2>
         <br />
         <h3 className="text-2xl font-bold pb-6">Lenguages</h3>
-        <div className="grid grid-cols-3 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-12">
           {languajes.map((languaje, index) => (
             <Skill key={index} data={languaje} />
           ))}
         </div>
         <br />
         <h3 className="text-2xl font-bold pb-6">Tecnologias</h3>
-        <div className="grid grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
           {technologies.map((technologie, index) => (
             <Skill key={index} data={technologie} />
           ))}
         </div>
         <br />
         <h3 className="text-2xl font-bold pb-6">Herramientas de trabajo</h3>
-        <div className="grid grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
           {tools.map((tool, index) => (
             <Skill key={index} data={tool} />
           ))}
