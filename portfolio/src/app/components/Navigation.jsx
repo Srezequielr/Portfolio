@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Navigation() {
   return (
     <nav className="top-0 left-0 right-0 opacity-90 bg-slate-600 fixed">
-      <div className="flex flex-row justify-around m-auto my-6 max-w-3xl">
+      <div className="flex flex-row justify-between items-center px-7 sm:px-0 m-auto my-6 max-w-3xl">
         <div>
           <p>Mi logo</p>
         </div>
@@ -23,9 +23,9 @@ export default function Navigation() {
             <Link href={"#contact"}>Contacto</Link>
           </p>
         </div>
-        <div className="sm:hidden">
+        <div className="sm:hidden flex object-center">
           <button>
-            <Image src={menuIcon} alt="Menu icon" className="w-5 ml-14" />
+            <Image src={menuIcon} alt="Menu icon" className="w-5" />
           </button>
         </div>
       </div>
