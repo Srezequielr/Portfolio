@@ -1,13 +1,15 @@
 import Link from "next/link";
+import menuIcon from "./../../Images/menu.png";
+import Image from "next/image";
 
 export default function Navigation() {
   return (
-    <nav className=" top-0 left-0 right-0 opacity-90 bg-slate-600 fixed">
-      <div className="grid grid-cols-2 m-6">
+    <nav className="top-0 left-0 right-0 opacity-90 bg-slate-600 fixed">
+      <div className="flex flex-row justify-around m-auto my-6 max-w-3xl">
         <div>
           <p>Mi logo</p>
         </div>
-        <div className="grid grid-cols-4">
+        <div className="hidden sm:grid sm:grid-cols-4 gap-9">
           <p>
             <Link href={"#about"}>Sobre mi</Link>
           </p>
@@ -20,6 +22,11 @@ export default function Navigation() {
           <p>
             <Link href={"#contact"}>Contacto</Link>
           </p>
+        </div>
+        <div className="sm:hidden">
+          <button>
+            <Image src={menuIcon} alt="Menu icon" className="w-5 ml-14" />
+          </button>
         </div>
       </div>
     </nav>
