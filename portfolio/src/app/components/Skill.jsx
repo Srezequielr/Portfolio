@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Skill({ data }) {
   return (
-    <div className="rounded col-span-1 bg-slate-500 p-5">
+    <div className="rounded col-span-1 bg-veriPery p-5">
       <div>
         <h4 className="text-center text-2xl mb-3">{data.name}</h4>
       </div>

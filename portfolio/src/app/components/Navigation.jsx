@@ -11,7 +11,7 @@ export default function Navigation() {
     setMenuIsOpen(!menuIsOpen);
   };
   return (
-    <nav className="top-0 left-0 right-0 bg-slate-600 fixed">
+    <nav className="top-0 left-0 right-0 bg-veriPery fixed">
       <div className="flex flex-row justify-between items-center px-7 sm:px-0 m-auto my-6 max-w-3xl">
         <div>
           <p>Mi logo</p>
@@ -37,7 +37,7 @@ export default function Navigation() {
         </div>
       </div>
       {menuIsOpen && (
-        <div className="fixed bg-slate-600 flex flex-col items-center w-full text-center transform transition-transform ease-in-out duration-300 ">
+        <div className="fixed bg-veriPery flex flex-col items-center w-full text-center transform transition-transform ease-in-out duration-300 ">
           <ul className="grid grid-rows-4 gap-3 my-2">
             <li>
               <Link onClick={menuHandler} href={"#about"}>
