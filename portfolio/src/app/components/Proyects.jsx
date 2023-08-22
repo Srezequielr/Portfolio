@@ -26,7 +26,7 @@ const proyects = [
 
 export default function Proyects() {
   return (
-    <article id="proyects" className="container m-auto px-8 my-5 scroll-mt-20">
+    <article id="proyects" className="container m-auto px-8 scroll-mt-24 my-24">
       <div>
         <h2 className="text-4xl font-bold my-5">Projects</h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-12">
