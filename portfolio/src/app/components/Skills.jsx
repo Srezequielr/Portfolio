@@ -16,7 +16,7 @@ import adobeIcon from "./../../Images/adobe-illustratorBK.png";
 
 const languajes = [
   { name: "HTML", img: HTMLBKIcon },
-  { name: "Java Script", img: javascriptIcon },
+  { name: "JavaScript", img: javascriptIcon },
   { name: "CSS", img: cssIcon },
 ];
 
@@ -29,7 +29,7 @@ const technologies = [
 
 const tools = [
   { name: "GitHub", img: gitHunIcon },
-  { name: "Adobe Ilustrator", img: adobeIcon },
+  { name: "Ilustrator", img: adobeIcon },
   { name: "Trello", img: trelloIcon },
   { name: "Figma", img: figmaIcon },
   { name: "Insomnia", img: insomniaIcon },
