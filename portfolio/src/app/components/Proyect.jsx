@@ -13,7 +13,7 @@ export default function Proyect({ data }) {
           <Image src={gitHubIcon} alt="GitHub Icon" className="w-10 hover:bg-slate-400 hover:scale-110 rounded-full p-1 transition " />
         </Link>
         <Link href={data.deploy} target="_blank">
-          <p className="font-bold hover:bg-slate-400 rounded-sm transition text-center p-1 hover:scale-110">Deploy</p>
+          <p className="font-bold w-20 hover:bg-slate-400 hover:scale-110 rounded-sm transition text-center p-1">Deploy</p>
         </Link>
       </div>
     </div>
