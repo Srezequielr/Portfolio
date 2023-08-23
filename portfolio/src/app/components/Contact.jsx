@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <article id="contact" className="container m-auto px-8 scroll-mt-24 my-24">
+    <article id="contact" className="container m-auto px-8 scroll-mt-24 sm:rounded-md bg-veriPery py-5">
       <h2 className="text-4xl md:text-5xl font-bold my-5 text-center">¡Contactame!</h2>
       <div className="my-5 mx-2  md:mx-80 md:my-10">
         <h2 className="text-2xl font-bold my-5">Completa el formulario</h2>
