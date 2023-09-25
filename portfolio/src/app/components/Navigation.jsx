@@ -3,6 +3,7 @@
 import Link from "next/link";
 import menuIcon from "./../../Images/menu.png";
 import Image from "next/image";
+import logo from "../../Images/logo.png"
 import { useState } from "react";
 
 export default function Navigation() {
@@ -14,7 +15,7 @@ export default function Navigation() {
     <nav className="top-0 left-0 right-0 bg-veriPery fixed">
       <div className="flex flex-row justify-between items-center px-7 sm:px-0 m-auto my-6 max-w-3xl">
         <div>
-          <p>Mi logo</p>
+          <Image src={logo} className="w-20"/>
         </div>
         <div className="hidden sm:grid sm:grid-cols-4 gap-9">
           <p>
