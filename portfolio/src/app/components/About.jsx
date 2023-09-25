@@ -2,15 +2,18 @@
 
 import Image from "next/image";
 import profile from "../../Images/Profile.jpg";
+import gitHub from "../../Images/githubBK.png";
+import linkedIn from "../../Images/linkedInBK.png";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function About() {
   const phrases = ["Full Stack", "Front End", "Back End"];
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentPhrase, setCurrentPhrase] = useState("");
   const [showNextPhrase, setShowNextPhrase] = useState(false);
-  const typingSpeed = 100; 
-  const delayBetweenPhrases = 1500; 
+  const typingSpeed = 100;
+  const delayBetweenPhrases = 1500;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,7 +29,7 @@ export default function About() {
     }, typingSpeed);
 
     return () => {
-      clearInterval(interval); 
+      clearInterval(interval);
     };
   }, [currentPhrase, currentPhraseIndex]);
 
@@ -44,7 +47,20 @@ export default function About() {
     <article id="about" className="container scroll-mt-24 my-24">
       <div className="grid grid-rows-2 md:grid-cols-2">
         <div className="col-span-1 row-span-4 px-8 flex flex-col justify-center">
-          <h1 className="text-4xl md:text-6xl mb-5 font-bold">Julian Ezequiel Riera</h1>
+          <div className="my-4 flex">
+            <Link target="_blank" href={"https://github.com/Srezequielr"}>
+              <Image src={gitHub} className="w-6 md:w-10 mx-2 md:mx-3" />
+            </Link>
+            <Image
+              title="Not found"
+              src={linkedIn}
+              className="w-6 md:w-10 mx-2 md:mx-3  "
+            />
+          </div>
+
+          <h1 className="text-4xl md:text-6xl mb-5 font-bold">
+            Julian Ezequiel Riera
+          </h1>
           <h2 className="text-2xl md:text-3xl mb-4">
             <span className="font-bold">{currentPhrase}</span> Developer
           </h2>
