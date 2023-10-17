@@ -51,11 +51,9 @@ export default function About() {
             <Link target="_blank" href={"https://github.com/Srezequielr"}>
               <Image src={gitHub} className="w-6 md:w-10 mx-2 md:mx-3" />
             </Link>
-            <Image
-              title="Not found"
-              src={linkedIn}
-              className="w-6 md:w-10 mx-2 md:mx-3  "
-            />
+            <Link target="_blank" href={"https://www.linkedin.com/in/julianriera/"}>
+              <Image src={linkedIn} className="w-6 md:w-10 mx-2 md:mx-3  " />
+            </Link>
           </div>
 
           <h1 className="text-4xl md:text-6xl mb-5 font-bold">
