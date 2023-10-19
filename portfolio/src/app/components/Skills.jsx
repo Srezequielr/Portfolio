@@ -13,6 +13,7 @@ import slackIcon from "./../../Images/slackBK.png";
 import trelloIcon from "./../../Images/trelloBK.png";
 import vsCodeIcon from "./../../Images/visual-studio-codeBK.png";
 import adobeIcon from "./../../Images/adobe-illustratorBK.png";
+import tailwindIcon from "./../../Images/tailwind_CSSBK.png";
 
 const languajes = [
   { name: "HTML", img: HTMLBKIcon },
@@ -24,6 +25,7 @@ const technologies = [
   { name: "React", img: reactIcon },
   { name: "Redux", img: reduxIcon },
   { name: "Material UI", img: materialUIIcon },
+  { name: "Tailwind", img: tailwindIcon },
   { name: "Express", img: expressIcon },
 ];
 
@@ -39,7 +41,10 @@ const tools = [
 
 export default function Skills() {
   return (
-    <article id="techSkills" className="container m-auto px-8 scroll-mt-24 my-24">
+    <article
+      id="techSkills"
+      className="container m-auto px-8 scroll-mt-24 my-24"
+    >
       <div>
         <h2 className="text-4xl font-bold">Tech Skills</h2>
         <br />
