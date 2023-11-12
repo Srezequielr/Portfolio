@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Proyect({ data }) {
   return (
-    <div className="bg-veriPery rounded">
+    <div className="bg-veriPery rounded shadow-lg">
       <Image src={data.img} alt={data.name} className="rounded-t" />
       <h4 className="m-4 font-bold text-2xl">{data.name}</h4>{" "}
       <p>{data.description}</p>
