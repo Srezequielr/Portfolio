@@ -13,7 +13,7 @@ export default function Navigation() {
   };
   return (
     <nav className="top-0 left-0 right-0 bg-veriPery fixed">
-      <div className="flex flex-row justify-between items-center px-7 sm:px-0 m-auto my-6 max-w-3xl">
+      <div className="flex flex-row m-auto justify-between items-center px-7 sm:px-10 my-6 max-w-3xl">
         <div>
           <Image src={logo} className="w-14 md:w-20"/>
         </div>
