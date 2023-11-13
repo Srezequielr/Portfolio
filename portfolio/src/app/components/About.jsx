@@ -44,7 +44,7 @@ export default function About() {
   }, [showNextPhrase]);
 
   return (
-    <article id="about" className="container scroll-mt-24 my-24">
+    <article id="about" className="container m-auto scroll-mt-24 my-24">
       <div className="grid grid-rows-2 md:grid-cols-2">
         <div className="col-span-1 row-span-4 px-8 flex flex-col justify-center">
           <div className="my-4 flex">
