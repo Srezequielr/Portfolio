@@ -18,6 +18,13 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {children}
+        <div className="bg-veriPery">
+          <br />
+          <p className="text-center font-bold">
+            Desarrollado por Julian Riera
+          </p>
+          <br />
+        </div>
       </body>
     </html>
   );
