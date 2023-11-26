@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <div className="bg-veriPery">
           <br />
           <p className="text-center font-bold">
-            Desarrollado por Julian Riera
+            Desarrollado por Julian Riera ❤
           </p>
           <br />
         </div>
