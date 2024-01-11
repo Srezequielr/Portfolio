@@ -9,8 +9,8 @@ export default function Home() {
     <div className="m-auto sm:mx-5 md:mx-10 lg:mx-24 xl:mx-32 ">
       <Navigation />
       <About />
-      <Skills />
       <Proyects />
+      <Skills />
       <Contact />
     </div>
   );
