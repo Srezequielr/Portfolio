@@ -14,6 +14,7 @@ import trelloIcon from "./../../Images/trelloBK.png";
 import vsCodeIcon from "./../../Images/visual-studio-codeBK.png";
 import adobeIcon from "./../../Images/adobe-illustratorBK.png";
 import tailwindIcon from "./../../Images/tailwind_CSSBK.png";
+import nextIcon from "./../../Images/next-jsBK.png"
 
 const languajes = [
   { name: "HTML", img: HTMLBKIcon },
@@ -23,6 +24,7 @@ const languajes = [
 
 const technologies = [
   { name: "React", img: reactIcon },
+  { name: "NextJS", img: nextIcon },
   { name: "Redux", img: reduxIcon },
   { name: "Material UI", img: materialUIIcon },
   { name: "Tailwind", img: tailwindIcon },

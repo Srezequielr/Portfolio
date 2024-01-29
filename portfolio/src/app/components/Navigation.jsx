@@ -19,16 +19,16 @@ export default function Navigation() {
         </div>
         <div className="hidden sm:grid sm:grid-cols-4 gap-9">
           <p>
-            <Link href={"#about"}>Sobre mi</Link>
+            <Link className="font-bold" href={"#about"}>Sobre mi</Link>
           </p>
           <p>
-            <Link href={"#techSkills"}>Tech Skills</Link>
+            <Link className="font-bold" href={"#techSkills"}>Tech Skills</Link>
           </p>
           <p>
-            <Link href={"#proyects"}>Proyectos</Link>
+            <Link className="font-bold" href={"#proyects"}>Proyectos</Link>
           </p>
           <p>
-            <Link href={"#contact"}>Contacto</Link>
+            <Link className="font-bold" href={"#contact"}>Contacto</Link>
           </p>
         </div>
         <div className="sm:hidden flex object-center">
