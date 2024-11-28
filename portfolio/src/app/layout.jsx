@@ -21,13 +21,14 @@ export default function RootLayout({ children }) {
       </head>
       <body className={[montserrat.className, " bg-white dark:bg-mainDark"]}>
         {children}
-        {/* <div className="bg-mainLight">
+        <article className="bg-mainLight dark:bg-secondDark">
           <br />
-          <p className="text-center font-bold">
-            Desarrollado por Julian Riera ❤
+          <p className="text-center font-bold text-lg">
+            Desarrollado por Julian Riera
           </p>
+          <p className="text-center">Simply, Lovely...</p>
           <br />
-        </div> */}
+        </article>
       </body>
     </html>
   );
