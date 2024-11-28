@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <article id="contact" className="container m-auto px-8 scroll-mt-24 my-24">
-      <div className="rounded-md bg-veriPery py-5">
+    <article id="contact" className="container m-auto scroll-mt-24 my-24">
+      <div className="rounded-3xl bg-mainLight dark:bg-secondDark py-5">
         <h2 className="text-4xl md:text-5xl font-bold my-5 text-center">
           ¡Contactame!
         </h2>
@@ -16,19 +16,19 @@ export default function Contact() {
               type="text"
               name="name"
               placeholder="Nombre"
-              className="p-3"
+              className="p-3 bg-detailColor rounded-lg"
             />
             <input
               type="email"
               name="email"
               placeholder="Email"
-              className="p-3"
+              className="p-3 bg-detailColor rounded-lg"
             />
             <textarea
               type="text"
               name="message"
               placeholder="Mensaje"
-              className="h-32 resize-none p-2"
+              className="h-32 resize-none p-2 bg-detailColor rounded-lg"
             />
             <input type="hidden" name="_gotcha" style={{ display: "none" }} />
 

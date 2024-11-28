@@ -1,71 +1,57 @@
 import Skill from "./Skill";
-import cssIcon from "./../../Images/cssBK.png";
-import figmaIcon from "./../../Images/figmaBK.png";
-import HTMLBKIcon from "./../../Images/HTMLBK.png";
-import insomniaIcon from "./../../Images/insomniaBK.png";
-import javascriptIcon from "./../../Images/javascriptBK.png";
-import materialUIIcon from "./../../Images/material-uiBK.png";
-import reactIcon from "./../../Images/reactBK.png";
-import reduxIcon from "./../../Images/reduxBK.png";
-import expressIcon from "./../../Images/expressjsBK.png";
-import gitHunIcon from "./../../Images/githubBK.png";
-import slackIcon from "./../../Images/slackBK.png";
-import trelloIcon from "./../../Images/trelloBK.png";
-import vsCodeIcon from "./../../Images/visual-studio-codeBK.png";
-import adobeIcon from "./../../Images/adobe-illustratorBK.png";
-import tailwindIcon from "./../../Images/tailwind_CSSBK.png";
-import nextIcon from "./../../Images/next-jsBK.png"
+
 
 const languajes = [
-  { name: "HTML", img: HTMLBKIcon },
-  { name: "JavaScript", img: javascriptIcon },
-  { name: "CSS", img: cssIcon },
+  { name: "HTML", code: "nonicons:html-16" },
+  { name: "JavaScript", code: "fluent:code-js-16-filled" },
+  { name: "CSS", code: "nonicons:css-16" },
+  {name: "C", code: "mdi:language-c"}
 ];
 
 const technologies = [
-  { name: "React", img: reactIcon },
-  { name: "NextJS", img: nextIcon },
-  { name: "Redux", img: reduxIcon },
-  { name: "Material UI", img: materialUIIcon },
-  { name: "Tailwind", img: tailwindIcon },
-  { name: "Express", img: expressIcon },
+  { name: "React", code: "mdi:react" },
+  { name: "NextJS", code: "tabler:brand-nextjs" },
+  { name: "Redux", code: "file-icons:redux" },
+  { name: "Material UI", code: "mdi:material-ui" },
+  { name: "Tailwind", code: "teenyicons:tailwind-outline" },
+  { name: "Express", code: "devicon:express" },
 ];
 
 const tools = [
-  { name: "GitHub", img: gitHunIcon },
-  { name: "Ilustrator", img: adobeIcon },
-  { name: "Trello", img: trelloIcon },
-  { name: "Figma", img: figmaIcon },
-  { name: "Insomnia", img: insomniaIcon },
-  { name: "Slack", img: slackIcon },
-  { name: "VS Code", img: vsCodeIcon },
+  { name: "GitHub", code: "line-md:github" },
+  { name: "Ilustrator", code: "hugeicons:adobe-illustrator" },
+  { name: "Trello", code: "hugeicons:trello" },
+  { name: "Figma", code: "solar:figma-outline" },
+  { name: "Insomnia", code: "devicon-plain:insomnia" },
+  { name: "Slack", code: "mdi:slack" },
+  { name: "VS Code", code: "proicons:visual-studio-code" },
 ];
 
 export default function Skills() {
   return (
     <article
       id="techSkills"
-      className="container m-auto px-8 scroll-mt-24 my-24"
+      className="container m-auto scroll-mt-24 my-24"
     >
       <div>
-        <h2 className="text-4xl font-bold">Tech Skills</h2>
+        <h2 className="text-4xl sm:text-6xl dark:text-white font-bold my-5">Habilidades &gt;</h2>
         <br />
-        <h3 className="text-2xl font-bold pb-6">Lenguages</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <h3 className="text-3xl dark:text-white font-bold pb-6">Lenguages</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-7">
           {languajes.map((languaje, index) => (
             <Skill key={index} data={languaje} />
           ))}
         </div>
         <br />
-        <h3 className="text-2xl font-bold pb-6">Tecnologias</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
+        <h3 className="text-3xl dark:text-white font-bold pb-6">Tecnologias</h3>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 ">
           {technologies.map((technologie, index) => (
             <Skill key={index} data={technologie} />
           ))}
         </div>
         <br />
-        <h3 className="text-2xl font-bold pb-6">Herramientas de trabajo</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
+        <h3 className="text-3xl dark:text-white font-bold pb-6">Herramientas de trabajo</h3>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 ">
           {tools.map((tool, index) => (
             <Skill key={index} data={tool} />
           ))}

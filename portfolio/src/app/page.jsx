@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 
 export default function Home() {
   return (
-    <div className="m-auto sm:mx-5 md:mx-10 lg:mx-24 xl:mx-32 ">
+    <div className="mx-5 sm:mx-11 md:mx-14 lg:mx-24 xl:mx-32 ">
       <Navigation />
       <About />
       <Proyects />

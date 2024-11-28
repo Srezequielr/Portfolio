@@ -3,7 +3,7 @@
 import Link from "next/link";
 import menuIcon from "./../../Images/menu.png";
 import Image from "next/image";
-import logo from "../../Images/logo.png"
+import logo from "../../Images/logo.png";
 import { useState } from "react";
 
 export default function Navigation() {
@@ -12,23 +12,31 @@ export default function Navigation() {
     setMenuIsOpen(!menuIsOpen);
   };
   return (
-    <nav className="top-0 left-0 right-0 bg-veriPery fixed">
-      <div className="flex flex-row m-auto justify-between items-center px-7 sm:px-10 my-6 max-w-3xl">
+    <nav className="top-0 left-0 right-0 bg-mainLight dark:bg-secondDark fixed">
+      <div className="flex flex-row m-auto justify-between items-center px-7 sm:px-10 my-6 max-w-5xl">
         <div>
-          <Image src={logo} className="w-14 md:w-20"/>
+          <Image src={logo} className="w-14 md:w-20" />
         </div>
         <div className="hidden sm:grid sm:grid-cols-4 gap-9">
           <p>
-            <Link className="font-bold" href={"#about"}>Sobre mi</Link>
+            <Link className="font-bold" href={"#about"}>
+              Sobre mi
+            </Link>
           </p>
           <p>
-            <Link className="font-bold" href={"#techSkills"}>Tech Skills</Link>
+            <Link className="font-bold" href={"#proyects"}>
+              Proyectos
+            </Link>
           </p>
           <p>
-            <Link className="font-bold" href={"#proyects"}>Proyectos</Link>
+            <Link className="font-bold" href={"#techSkills"}>
+              Habilidades
+            </Link>
           </p>
           <p>
-            <Link className="font-bold" href={"#contact"}>Contacto</Link>
+            <Link className="font-bold" href={"#contact"}>
+              Contacto
+            </Link>
           </p>
         </div>
         <div className="sm:hidden flex object-center">
@@ -38,7 +46,7 @@ export default function Navigation() {
         </div>
       </div>
       {menuIsOpen && (
-        <div className="fixed bg-veriPery flex flex-col items-center w-full text-center transform transition-transform ease-in-out duration-300 ">
+        <div className="fixed bg-mainLight dark:bg-secondDark flex flex-col items-center w-full text-center transform transition-transform ease-in-out duration-300 ">
           <ul className="grid grid-rows-4 gap-3 my-2">
             <li>
               <Link onClick={menuHandler} href={"#about"}>
@@ -46,13 +54,13 @@ export default function Navigation() {
               </Link>
             </li>
             <li>
-              <Link onClick={menuHandler} href={"#techSkills"}>
-                Tech Skills
+              <Link onClick={menuHandler} href={"#proyects"}>
+                Proyectos
               </Link>
             </li>
             <li>
-              <Link onClick={menuHandler} href={"#proyects"}>
-                Proyectos
+              <Link onClick={menuHandler} href={"#techSkills"}>
+                Habilidades
               </Link>
             </li>
             <li>

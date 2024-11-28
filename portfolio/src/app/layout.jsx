@@ -1,8 +1,11 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
-import Navigation from "./components/Navigation";
+import { Montserrat } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["200", "300", "600", "700"],
+  style: "normal",
+});
 
 export const metadata = {
   title: "Julian Riera",
@@ -14,17 +17,17 @@ export default function RootLayout({ children }) {
   return (
     <html className="!scroll-smooth" lang="en">
       <head>
-        <meta name="theme-color" content="#6667ab"/>
+        <meta name="theme-color" content="#6667ab" />
       </head>
-      <body className={inter.className}>
+      <body className={[montserrat.className, " bg-white dark:bg-mainDark"]}>
         {children}
-        <div className="bg-veriPery">
+        {/* <div className="bg-mainLight">
           <br />
           <p className="text-center font-bold">
             Desarrollado por Julian Riera ❤
           </p>
           <br />
-        </div>
+        </div> */}
       </body>
     </html>
   );
