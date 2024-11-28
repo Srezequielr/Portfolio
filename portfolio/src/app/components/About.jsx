@@ -78,11 +78,12 @@ export default function About() {
         Soy un desarrollador proactivo, con predisposición al cambio y a la
         adaptación.
       </p>
-      <Icon
-        icon={"teenyicons:down-solid"}
-        
-        className="m-auto dark:text-white text-5xl sm:text-7xl"
-      ></Icon>
+      <Link className="block m-auto" href={"#proyects"}>
+        <Icon
+          icon={"teenyicons:down-solid"}
+          className="m-auto dark:text-white text-5xl sm:text-7xl"
+        ></Icon>
+      </Link>
     </article>
   );
 }
