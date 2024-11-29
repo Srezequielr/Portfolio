@@ -5,6 +5,8 @@ import menuIcon from "./../../Images/menu.png";
 import Image from "next/image";
 import logo from "../../Images/logo.png";
 import { useState } from "react";
+import { Icon } from "@iconify/react";
+// import cv from "../../../public/Full-Stack-Julian-Riera-CV.pdf"
 
 export default function Navigation() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -17,26 +19,35 @@ export default function Navigation() {
         <div>
           <Image src={logo} className="w-14 md:w-20" />
         </div>
-        <div className="hidden sm:grid sm:grid-cols-4 gap-9">
-          <p>
-            <Link className="font-bold" href={"#about"}>
-              Sobre mi
+        <div className="hidden sm:grid sm:grid-cols-5 gap-5">
+          <p className="text-center">
+            <Link className="font-bold " href={"#about"}>
+              Sobre mí
             </Link>
           </p>
-          <p>
+          <p className="text-center">
             <Link className="font-bold" href={"#proyects"}>
               Proyectos
             </Link>
           </p>
-          <p>
+          <p className="text-center">
             <Link className="font-bold" href={"#techSkills"}>
               Habilidades
             </Link>
           </p>
-          <p>
+          <p className="text-center">
             <Link className="font-bold" href={"#contact"}>
               Contacto
             </Link>
+          </p>
+          <p className="text-center">
+            <a
+              className="font-bold"
+              href="/Full-Stack-Julian-Riera-CV.pdf"
+              download
+            >
+              Descargar CV
+            </a>
           </p>
         </div>
         <div className="sm:hidden flex object-center">
