@@ -5,6 +5,8 @@ import menuIcon from "./../../Images/menu.png";
 import Image from "next/image";
 import logo from "../../Images/logo.png";
 import { useState } from "react";
+import { Icon } from "@iconify/react";
+import { Fade } from "react-awesome-reveal";
 
 export default function Navigation() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -80,6 +82,14 @@ export default function Navigation() {
           </ul>
         </div>
       )}
+      <Fade duration={600}>
+        <a href="/Full-Stack-Julian-Riera-CV.pdf" download>
+          <div className="fixed flex items-center justify-center right-0 top-3/4 rounded-l-xl sm:hidden p-2 bg-mainLight dark:bg-secondDark ">
+            <Icon icon={"tabler:download"} className="inline text-xl"></Icon>
+            <p className="text-lg font-bold mx-1">CV</p>
+          </div>
+        </a>
+      </Fade>
     </nav>
   );
 }
