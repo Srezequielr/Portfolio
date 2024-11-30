@@ -47,7 +47,7 @@ export default function About() {
   return (
     <article
       id="about"
-      className="container m-auto scroll-mt-24 pt-32 h-screen flex flex-col"
+      className="container m-auto scroll-mt-24 pt-32 h-screen min-h-max flex flex-col"
     >
       <h1 className="text-5xl md:text-7xl mb-1 font-bold dark:text-white">
         Hola! <br />
