@@ -5,8 +5,6 @@ import menuIcon from "./../../Images/menu.png";
 import Image from "next/image";
 import logo from "../../Images/logo.png";
 import { useState } from "react";
-import { Icon } from "@iconify/react";
-// import cv from "../../../public/Full-Stack-Julian-Riera-CV.pdf"
 
 export default function Navigation() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -14,7 +12,7 @@ export default function Navigation() {
     setMenuIsOpen(!menuIsOpen);
   };
   return (
-    <nav className="top-0 left-0 right-0 bg-mainLight dark:bg-secondDark fixed">
+    <nav className="top-0 left-0 right-0 bg-mainLight dark:bg-secondDark fixed z-10">
       <div className="flex flex-row m-auto justify-between items-center px-7 sm:px-10 my-6 max-w-5xl">
         <div>
           <Image src={logo} className="w-14 md:w-20" />
