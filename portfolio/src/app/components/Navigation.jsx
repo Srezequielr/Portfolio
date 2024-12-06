@@ -20,29 +20,29 @@ export default function Navigation() {
           <Image alt="Isotipo" src={logo} className="w-14 md:w-20" />
         </div>
         <div className="hidden sm:grid sm:grid-cols-5 gap-5">
-          <p className="text-center">
-            <Link className="font-bold " href={"#about"}>
+          <p className="text-center text-white dark:text-black">
+            <Link className="font-bold" href={"#about"}>
               Sobre mí
             </Link>
           </p>
-          <p className="text-center">
+          <p className="text-center text-white dark:text-black">
             <Link className="font-bold" href={"#proyects"}>
               Proyectos
             </Link>
           </p>
-          <p className="text-center">
+          <p className="text-center text-white dark:text-black">
             <Link className="font-bold" href={"#techSkills"}>
               Habilidades
             </Link>
           </p>
-          <p className="text-center">
+          <p className="text-center text-white dark:text-black">
             <Link className="font-bold" href={"#contact"}>
               Contacto
             </Link>
           </p>
           <p className="text-center">
             <a
-              className="font-bold"
+              className="font-bold text-white dark:text-black"
               href="/Full-Stack-Julian-Riera-CV.pdf"
               download
             >

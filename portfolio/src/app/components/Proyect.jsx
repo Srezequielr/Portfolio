@@ -6,11 +6,17 @@ import { Icon } from "@iconify/react";
 export default function Proyect({ data }) {
   return (
     <div className="bg-mainLight dark:bg-secondDark rounded-3xl shadow-lg">
-      <Image src={data.img} alt={data.name} className="rounded-t-3xl" />
-      <h4 className="m-4 font-bold text-3xl md:text-4xl ">{data.name}</h4>{" "}
+      <Image src={data.img} alt={data.name} className="rounded-t-3xl " />
+      <h4 className="m-4 font-bold text-3xl md:text-4xl text-white dark:text-black ">
+        {data.name}
+      </h4>{" "}
       <p className="m-4">{data.description}</p>
       <div className="flex gap-3 mb-4 ml-4 justify-start items-center">
-        <Link href={data.gitHub} target="_blank" className="shadow-lg rounded-lg bg-detailColor p-1">
+        <Link
+          href={data.gitHub}
+          target="_blank"
+          className="shadow-lg rounded-lg bg-detailColor p-1"
+        >
           <Icon
             icon={"line-md:github"}
             className="inline text-4xl md:text-5xl "
