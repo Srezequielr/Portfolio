@@ -1,9 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import profile from "../../Images/Profile.jpg";
-import gitHub from "../../Images/githubBK.png";
-import linkedIn from "../../Images/linkedInBK.png";
 import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";

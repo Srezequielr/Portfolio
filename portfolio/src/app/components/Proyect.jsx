@@ -1,5 +1,4 @@
 import Image from "next/image";
-import gitHubIcon from "./../../Images/githubBK.png";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
