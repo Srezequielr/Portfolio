@@ -17,7 +17,7 @@ export default function Navigation() {
     <nav className="top-0 left-0 right-0 bg-mainLight dark:bg-secondDark fixed z-10">
       <div className="flex flex-row m-auto justify-between items-center px-7 sm:px-10 my-6 max-w-5xl">
         <div>
-          <Image src={logo} className="w-14 md:w-20" />
+          <Image alt="Isotipo" src={logo} className="w-14 md:w-20" />
         </div>
         <div className="hidden sm:grid sm:grid-cols-5 gap-5">
           <p className="text-center">
