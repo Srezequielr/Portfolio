@@ -5,40 +5,40 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 
 export default function About() {
-  const phrases = ["Full Stack", "Front End", "Back End"];
-  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  const [currentPhrase, setCurrentPhrase] = useState("");
-  const [showNextPhrase, setShowNextPhrase] = useState(false);
-  const typingSpeed = 100;
-  const delayBetweenPhrases = 1500;
-
+  const words = ["Full Stack", "Front End", "Back End"];
+  const [currentText, setCurrentText] = useState("");
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(100);
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (currentPhrase.length < phrases[currentPhraseIndex].length) {
-        setCurrentPhrase(
-          (prevPhrase) =>
-            prevPhrase +
-            phrases[currentPhraseIndex].charAt(currentPhrase.length)
-        );
+    if (!words.length) return;
+
+    const currentWord = words[currentWordIndex];
+    let typingTimeout;
+
+    const handleTyping = () => {
+      if (isDeleting) {
+        setCurrentText((prev) => prev.slice(0, -1));
+        setTypingSpeed(50);
       } else {
-        setShowNextPhrase(true);
+        setCurrentText((prev) => currentWord.slice(0, prev.length + 1));
+        setTypingSpeed(100);
       }
-    }, typingSpeed);
 
-    return () => {
-      clearInterval(interval);
+      if (!isDeleting && currentText === currentWord) {
+        typingTimeout = setTimeout(() => setIsDeleting(true), 1500);
+      } else if (isDeleting && currentText === "") {
+        setIsDeleting(false);
+        setCurrentWordIndex((prev) => (prev + 1) % words.length);
+      } else {
+        typingTimeout = setTimeout(handleTyping, typingSpeed);
+      }
     };
-  }, [currentPhrase, currentPhraseIndex]);
 
-  useEffect(() => {
-    if (showNextPhrase) {
-      setTimeout(() => {
-        setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-        setCurrentPhrase("");
-        setShowNextPhrase(false);
-      }, delayBetweenPhrases);
-    }
-  }, [showNextPhrase]);
+    typingTimeout = setTimeout(handleTyping, typingSpeed);
+
+    return () => clearTimeout(typingTimeout);
+  }, [currentText, isDeleting, currentWordIndex, words, typingSpeed]);
 
   return (
     <article
@@ -50,7 +50,8 @@ export default function About() {
         Soy Julian!
       </h1>
       <h2 className="text-3xl md:text-5xl dark:text-white">
-        <span className="font-bold">{currentPhrase}</span> Developer
+        <span className="font-bold">{currentText}<span className="animate-pulse">_</span> </span>{" "}
+         Developer
       </h2>
       <div className="my-3 sm:my-6">
         <Link target="_blank" href={"https://github.com/Srezequielr"}>
