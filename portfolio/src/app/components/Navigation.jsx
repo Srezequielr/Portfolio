@@ -13,6 +13,7 @@ export default function Navigation() {
   const menuHandler = () => {
     setMenuIsOpen(!menuIsOpen);
   };
+  console.log("<3 If you see this, hire me <3");
   return (
     <nav className="top-0 left-0 right-0 bg-mainLight dark:bg-secondDark fixed z-10">
       <div className="flex flex-row m-auto justify-between items-center px-7 sm:px-10 my-6 max-w-5xl">
