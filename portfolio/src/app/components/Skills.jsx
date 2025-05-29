@@ -5,7 +5,9 @@ const languajes = [
   { name: "HTML", code: "nonicons:html-16" },
   { name: "JavaScript", code: "fluent:code-js-16-filled" },
   { name: "CSS", code: "nonicons:css-16" },
-  {name: "C", code: "mdi:language-c"}
+  {name: "C", code: "mdi:language-c"},
+  { name: "Python", code: "proicons:python" },
+  { name: "SQL", code: "tabler:sql" },
 ];
 
 const technologies = [
@@ -25,6 +27,7 @@ const tools = [
   { name: "Insomnia", code: "devicon-plain:insomnia" },
   { name: "Slack", code: "mdi:slack" },
   { name: "VS Code", code: "proicons:visual-studio-code" },
+  { name: "PostgresQL", code: "simple-icons:postgresql" },
 ];
 
 export default function Skills() {
