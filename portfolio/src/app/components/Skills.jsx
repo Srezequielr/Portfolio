@@ -16,6 +16,7 @@ const technologies = [
   { name: "Redux", code: "file-icons:redux" },
   { name: "Material UI", code: "mdi:material-ui" },
   { name: "Tailwind", code: "teenyicons:tailwind-outline" },
+  { name: "Bootstrap", code: "hugeicons:bootstrap" },
   { name: "Express", code: "simple-icons:express" },
 ];
 
