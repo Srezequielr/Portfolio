@@ -14,7 +14,7 @@ export default function Proyect({ data }) {
         <Link
           href={data.gitHub}
           target="_blank"
-          className="shadow-lg rounded-lg bg-detailColor p-1"
+          className="shadow-2xl rounded-lg bg-detailColor p-1 hover:shadow-none transition"
         >
           <Icon
             icon={"line-md:github"}
@@ -22,7 +22,7 @@ export default function Proyect({ data }) {
           ></Icon>
         </Link>
         <Link href={data.deploy} target="_blank">
-          <p className="font-bold text-xl md:text-2xl shadow-lg rounded-lg bg-detailColor text-center p-2 md:p-3">
+          <p className="font-bold text-xl md:text-2xl shadow-2xl rounded-lg bg-detailColor text-center p-2 md:p-3 hover:shadow-none transition">
             Deploy
           </p>
         </Link>

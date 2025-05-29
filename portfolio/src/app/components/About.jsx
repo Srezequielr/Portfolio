@@ -10,6 +10,7 @@ export default function About() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
+  
   useEffect(() => {
     if (!words.length) return;
 
@@ -83,41 +84,4 @@ export default function About() {
       </Link>
     </article>
   );
-}
-
-{
-  /* <div className="grid grid-rows-2 md:grid-cols-2">
-  <div className="col-span-1 row-span-4 px-8 flex flex-col justify-center">
-    <div className="my-4 flex">
-      <Link target="_blank" href={"https://github.com/Srezequielr"}>
-        <Image src={gitHub} className="w-6 md:w-10 mx-2 md:mx-3" />
-      </Link>
-      <Link target="_blank" href={"https://www.linkedin.com/in/julianriera/"}>
-        <Image src={linkedIn} className="w-6 md:w-10 mx-2 md:mx-3  " />
-      </Link>
-    </div>
-
-    <h1 className="text-4xl md:text-6xl mb-5 font-bold">
-      Julian Ezequiel Riera
-    </h1>
-    <h2 className="text-2xl md:text-3xl mb-4">
-      <span className="font-bold">{currentPhrase}</span> Developer
-    </h2>
-    <p className="text-xl mb-4">
-      Si tengo que definir mi perfil profesional, seria perfeccionista.{" "}
-      <br />
-      Tengo un amplio abanico de tecnologias y conocimientos adquiridos
-      como asi una inclinacion hacia el Front End. <br />
-      Soy un desarrollador proactivo, con predispocision al cambio y a la
-      adaptacion.
-    </p>
-  </div>
-  <div className="col-span-1 row-span-4 px-8 flex flex-col justify-center">
-    <Image
-      alt="Julian Riera Profile"
-      className="rounded-full m-auto"
-      src={profile}
-    />
-  </div>
-</div> */
 }
