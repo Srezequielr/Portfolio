@@ -46,7 +46,7 @@ export default function About() {
       id="about"
       className="container m-auto scroll-mt-24 pt-32 h-screen min-h-max flex flex-col"
     >
-      <h1 className="text-5xl md:text-7xl mb-1 font-bold dark:text-white">
+      <h1 className="text-4xl md:text-6xl mb-1 font-bold dark:text-white">
         Hola! <br />
         Soy Julian!
       </h1>
@@ -58,23 +58,18 @@ export default function About() {
         <Link target="_blank" href={"https://github.com/Srezequielr"}>
           <Icon
             icon={"line-md:github"}
-            className="inline dark:text-white text-5xl sm:text-7xl"
+            className="inline dark:text-white text-4xl sm:text-6xl"
           ></Icon>
         </Link>
         <Link target="_blank" href={"https://www.linkedin.com/in/julianriera/"}>
           <Icon
             icon={"line-md:linkedin"}
-            className="inline dark:text-white text-5xl sm:text-7xl"
+            className="inline dark:text-white text-4xl sm:text-6xl"
           ></Icon>
         </Link>
       </div>
-      <p className=" text-xl md:text-3xl dark:text-white mb-4 md:w-3/4">
-        Si tuviera que definir mi perfil profesional, diría que soy
-        perfeccionista. <br />
-        Cuento con un amplio abanico de tecnologías y conocimientos adquiridos,
-        además de una inclinación hacia el Front End. <br />
-        Soy un desarrollador proactivo, con predisposición al cambio y a la
-        adaptación.
+      <p className=" text-lg md:text-3xl dark:text-white mb-4 md:w-10/12">
+          Soy programador egresado de Henry y actualmente estudiante en la Universidad Nacional de San Juan. Cuento con experiencia en diversos lenguajes y tecnologías que me permiten crear soluciones funcionales y bien diseñadas. Me apasiona el desarrollo web y disfruto enfrentarme a nuevos retos que me impulsen a seguir aprendiendo y creciendo profesionalmente.
       </p>
       <Link className="block m-auto" href={"#proyects"}>
         <Icon
