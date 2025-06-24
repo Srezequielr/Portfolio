@@ -1,6 +1,7 @@
 "use client";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
 import Navigation from "./components/Navigation";
 import Proyects from "./components/Proyects";
 import Skills from "./components/Skills";
@@ -12,6 +13,9 @@ export default function Home() {
       <Navigation />
       <Fade duration={600}>
         <About />
+      </Fade>
+      <Fade duration={600}>
+        <Education />
       </Fade>
       <Fade duration={600}>
         <Proyects />
