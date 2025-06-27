@@ -18,7 +18,7 @@ export default function EducationCard({ data }) {
             className="object-contain rounded-2xl block dark:hidden"
           />
         </div>
-        <div className="w-full rounded-3xl flex flex-col justify-around bg-mainLight dark:bg-secondDark p-1">
+        <div className="w-full min-h-[130px] rounded-3xl flex flex-col justify-around bg-mainLight dark:bg-secondDark p-1">
           <h4 className="mx-4 md:my-4 font-bold text-lg md:text-4xl text-white dark:text-black">
             {data.name}
           </h4>
