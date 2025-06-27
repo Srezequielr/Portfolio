@@ -4,7 +4,7 @@ export default function EducationCard({ data }) {
   return (
     <div className="container flex flex-col gap-4 md:gap-7 ">
       <div className="flex flex-row gap-4 md:gap-7 items-stretch">
-        <div className="flex justify-center relative w-32 h-32 md:w-64 md:h-auto bg-mainLight dark:bg-secondDark rounded-3xl p-4">
+        <div className="flex justify-center relative w-32 h-auto md:w-64 md:h-auto bg-mainLight dark:bg-secondDark rounded-3xl p-4">
           <Image
             alt={data.name}
             src={data.imgDark}
