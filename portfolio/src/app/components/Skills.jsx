@@ -28,7 +28,7 @@ const tools = [
   { name: "Insomnia", code: "devicon-plain:insomnia" },
   { name: "Slack", code: "mdi:slack" },
   { name: "VS Code", code: "proicons:visual-studio-code" },
-  { name: "PostgresQL", code: "simple-icons:postgresql" },
+  { name: "PostgreSQL", code: "simple-icons:postgresql" },
 ];
 
 export default function Skills() {
@@ -41,21 +41,21 @@ export default function Skills() {
         <h2 className="text-4xl sm:text-6xl dark:text-white font-bold my-5">Habilidades &gt;</h2>
         <br />
         <h3 className="text-3xl dark:text-white font-bold pb-6">Lenguages</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-7">
+        <div className="grid grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-7">
           {languajes.map((languaje, index) => (
             <Skill key={index} data={languaje} />
           ))}
         </div>
         <br />
         <h3 className="text-3xl dark:text-white font-bold pb-6">Tecnologias</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 ">
+        <div className="grid grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-7">
           {technologies.map((technologie, index) => (
             <Skill key={index} data={technologie} />
           ))}
         </div>
         <br />
         <h3 className="text-3xl dark:text-white font-bold pb-6">Herramientas de trabajo</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 ">
+        <div className="grid grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-7">
           {tools.map((tool, index) => (
             <Skill key={index} data={tool} />
           ))}
