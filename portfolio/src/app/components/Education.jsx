@@ -5,15 +5,15 @@ import EducationCard from "./EducationCard";
 
 const educacion = [
   {
-    name: "Universidad Nacional de San Juan",
+    name: "Univ. Nacional de San Juan",
     imgDark: UNSJLogoDark,
     imgLight: UNSJLogoLight,
-    carrer: "Tecnicatura Universitaria en Programación Web",
+    carrer: "Tec. Universitaria en Programación Web",
     descrition: "Estudiante avanzado en la carrera de programación web proximo a finalizar. En el transcurso de la carrera estudie y aplique conocimientos en diversos lenguajes de programación, estructuras de datos y algormos, bases de datos. Ademas de trabajar en proyectos grupales e individuales, donde aplique los conocimientos adquiridos.",
     periodo: "2021 - Actualidad",
   },
   {
-    name: "Henry",
+    name: "Soy Henry",
     imgDark: henryLogo,
     imgLight: henryLogo,
     carrer: "Full Stack Developer",
