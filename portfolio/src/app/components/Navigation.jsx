@@ -20,10 +20,15 @@ export default function Navigation() {
         <div>
           <Image alt="Isotipo" src={logo} className="w-14 md:w-20" />
         </div>
-        <div className="hidden sm:grid sm:grid-cols-5 gap-5">
+        <div className="hidden lg:grid sm:grid-cols-6 gap-5">
           <p className="text-center text-white dark:text-black">
             <Link className="font-bold" href={"#about"}>
               Sobre mí
+            </Link>
+          </p>
+          <p className="text-center text-white dark:text-black">
+            <Link className="font-bold" href={"#education"}>
+              Educación
             </Link>
           </p>
           <p className="text-center text-white dark:text-black">
@@ -51,7 +56,7 @@ export default function Navigation() {
             </a>
           </p>
         </div>
-        <div className="sm:hidden flex object-center">
+        <div className="lg:hidden flex object-center">
           <button onClick={menuHandler}>
             <Image src={menuIcon} alt="Menu icon" className="w-5" />
           </button>
@@ -60,23 +65,28 @@ export default function Navigation() {
       {menuIsOpen && (
         <div className="fixed bg-mainLight dark:bg-secondDark flex flex-col items-center w-full text-center transform transition-transform ease-in-out duration-300 ">
           <ul className="grid grid-rows-4 gap-3 my-2">
-            <li>
-              <Link onClick={menuHandler} href={"#about"}>
+            <li className="my-2">
+              <Link onClick={menuHandler} href={"#about"} className="font-bold ">
                 Sobre mi
               </Link>
             </li>
-            <li>
-              <Link onClick={menuHandler} href={"#proyects"}>
+            <li className="my-2">
+              <Link onClick={menuHandler} href={"#education"} className="font-bold">
+                Educación
+              </Link>
+            </li>
+            <li className="my-2">
+              <Link onClick={menuHandler} href={"#proyects"} className="font-bold">
                 Proyectos
               </Link>
             </li>
-            <li>
-              <Link onClick={menuHandler} href={"#techSkills"}>
+            <li className="my-2">
+              <Link onClick={menuHandler} href={"#techSkills"} className="font-bold">
                 Habilidades
               </Link>
             </li>
-            <li>
-              <Link onClick={menuHandler} href={"#contact"}>
+            <li className="my-2">
+              <Link onClick={menuHandler} href={"#contact"} className="font-bold">
                 Contacto
               </Link>
             </li>
