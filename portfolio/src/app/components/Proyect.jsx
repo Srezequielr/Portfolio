@@ -4,8 +4,6 @@ import { Icon } from "@iconify/react";
 import { skillsData } from "../skills";
 
 export default function Proyect({ data }) {
-  console.log(data);
-
   return (
     <div className="bg-mainLight dark:bg-secondDark rounded-3xl shadow-lg">
       <Image src={data.img} alt={data.name} className="rounded-t-3xl " />
