@@ -1,5 +1,5 @@
 
-Soy Julian Riera, Desarrollador Full Stack con más de un año de experiencia en desarrollo de aplicaciones web. Me caracterizo por mi compromiso con cada proyecto y mi capacidad para trabajar en equipo y resolver problemas eficientemente.
+Soy Julian Riera, Desarrollador Full Stack con más de dos años de experiencia en desarrollo de aplicaciones web. Me caracterizo por mi compromiso con cada proyecto y mi capacidad para trabajar en equipo y resolver problemas eficientemente.
 
 ## Experiencia Profesional
 
