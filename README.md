@@ -31,9 +31,12 @@ Aplicación completa que consume API de Pokémon:
 ## Formación
 
 ### Educación Formal
-- **Universidad Nacional de San Juan**: Tecnicatura Universitaria en Programación Web (2024-Actualidad)
+- **Universidad Nacional de San Juan**(2021-Actualidad):
+    - Licenciatura en Ciencias de la computacion 
+    - Tecnicatura Universitaria en Programación Web
+    - Licenciatura en Sistemas de Informacion
 - **Henry Bootcamp**: Full Stack Developer (2022-2023) - 400+ horas de formación práctica
-- **Saint John's**: Inglés Nivel Intermedio B2 (2023-Actualidad)
+- **Saint John's**: Inglés Nivel Intermedio B2 (2023-2024)
 
 ## Habilidades Técnicas
 
