@@ -29,7 +29,7 @@ const proyects = [
 
 export default function Proyects() {
   return (
-    <article id="proyects" className="container m-auto scroll-mt-24 ">
+    <article id="proyects" className="scroll-mt-7 relative min-h-screen flex items-center justify-center overflow-hidden py-24">
       <div>
         <h2 className="text-4xl sm:text-6xl dark:text-white font-bold my-5">
           Projects &gt;

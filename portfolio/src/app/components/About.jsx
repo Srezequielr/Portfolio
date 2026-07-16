@@ -44,7 +44,7 @@ export default function About() {
   return (
     <article
       id="about"
-      className="container m-auto scroll-mt-24 pt-32 h-screen min-h-max flex flex-col"
+      className="container m-auto scroll-mt-24 pt-32 min-h-screen flex flex-col"
     >
       <h1 className="text-4xl md:text-6xl mb-1 font-bold dark:text-white">
         Hola! <br />
@@ -71,7 +71,7 @@ export default function About() {
       <p className=" text-lg md:text-3xl dark:text-white mb-4 md:w-10/12">
           Soy programador egresado de Henry y actualmente estudiante en la Universidad Nacional de San Juan. Cuento con experiencia en diversos lenguajes y tecnologías que me permiten crear soluciones funcionales y bien diseñadas. Me apasiona el desarrollo web y disfruto enfrentarme a nuevos retos que me impulsen a seguir aprendiendo y creciendo profesionalmente.
       </p>
-      <Link className="block m-auto" href={"#proyects"}>
+      <Link className="block m-auto" href={"#education"}>
         <Icon
           icon={"teenyicons:down-solid"}
           className="m-auto dark:text-white text-5xl sm:text-7xl"

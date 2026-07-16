@@ -25,7 +25,7 @@ const educacion = [
 
 export default function Education() {
   return (
-    <article id="education" className="container m-auto scroll-mt-24 my-24">
+    <article id="education" className="scroll-mt-7 relative min-h-screen flex items-center justify-center overflow-hidden py-24">
       <div>
         <h2 className="text-4xl sm:text-6xl dark:text-white font-bold my-5">
           Educación &gt;

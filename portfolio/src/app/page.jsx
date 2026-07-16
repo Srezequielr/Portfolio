@@ -11,19 +11,19 @@ export default function Home() {
   return (
     <div className="mx-5 sm:mx-11 md:mx-14 lg:mx-24 xl:mx-32 ">
       <Navigation />
-      <Fade duration={600}>
+      <Fade duration={1000}>
         <About />
       </Fade>
-      <Fade duration={600}>
+      <Fade duration={1000}>
         <Education />
       </Fade>
-      <Fade duration={600}>
+      <Fade duration={1000}>
         <Proyects />
       </Fade>
-      <Fade duration={600}>
+      <Fade duration={1000}>
         <Skills />
       </Fade>
-      <Fade duration={600}>
+      <Fade duration={1000 }>
         <Contact />
       </Fade>
     </div>
