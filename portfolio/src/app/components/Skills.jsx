@@ -13,6 +13,7 @@ const languajes = [
 const technologies = [
   { name: "React", code: "mdi:react" },
   { name: "NextJS", code: "tabler:brand-nextjs" },
+  { name: "Astro", code: "meteor-icons:astro" },
   { name: "Express", code: "simple-icons:express" },
   { name: "Tailwind", code: "teenyicons:tailwind-outline" },
   { name: "Redux", code: "file-icons:redux" },
