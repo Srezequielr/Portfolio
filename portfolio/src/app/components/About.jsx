@@ -51,7 +51,7 @@ export default function About() {
         Soy Julian!
       </h1>
       <h2 className="text-3xl md:text-5xl dark:text-white">
-        <span className="font-bold">{currentText}<span className="animate-pulse">_</span> </span>{" "}
+        <span className="font-bold text-detailColor">{currentText}<span className="animate-pulse">_</span> </span>{" "}
          Developer
       </h2>
       <div className="my-3 sm:my-6">
